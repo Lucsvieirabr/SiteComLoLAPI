@@ -15,6 +15,7 @@ body  {
     background-color: rgba(10,23,55,0.5);
     color: white;
     font-family: 'Lobster', cursive;
+    
 
 }
 
@@ -23,6 +24,24 @@ body  {
     position: absolute;
     top: 2rem;
     text-align: center;
-    font-size: 5rem;
+    font-size: 2.5rem;
+    
+
+}
+
+.buttons{
+
+
+    background-color: rgba(238, 238, 238, 0.5);
+    height: 50px;
+    border-radius:50%;
+    width: 50px;
+    outline: none;
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    padding: 0;
+    border:none;
+
 
 }
