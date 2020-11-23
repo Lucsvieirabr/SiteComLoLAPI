@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Lol API</title>
-    <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/computer-techologies-outline-free/128/ic_league_of_legend_logo-512.png">
+    <link id="icon" rel="icon" href="https://cdn1.iconfinder.com/data/icons/computer-techologies-outline-free/128/ic_league_of_legend_logo-512.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
@@ -17,10 +17,10 @@
         <hr>
     </div>
     
-    <button class="buttons" onclick="getBackgroundAndChampNameFromAPI()" > <i class="fa fa-refresh" style="font-size:40px;color:rgb(255, 255, 255)"></i></button>
+    <button class="buttons" onclick="changeAPI()" > <i class="fa fa-refresh" style="font-size:40px;color:rgb(255, 255, 255)"></i></button>
     <button onclick="OpenMenu()" class="buttons" id="butgear" ><i class="fa fa-gear" style="font-size:40px;color:rgb(255, 255, 255)"></i></button>
 
-    <div class="menu" id="menu">
+    <div class="menu" id="menu" style="display: none;">
 
         <h1> Menu</h1>
         
@@ -36,7 +36,7 @@
     <br>
 
     <label for="APItype">API change: </label>
-    <select onchange="changeAPI()" id="APItype" class="select"  name="APItype">
+    <select onchange="changeAPIAll()" id="APItype" class="select"  name="APItype">
 
     
         <option value=lol>League of Legend</option>
